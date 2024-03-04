@@ -1,3 +1,0 @@
-D:/Desktop/workspace/DataMaker/cmake-build-debug/CMakeFiles/DataMaker.dir
-D:/Desktop/workspace/DataMaker/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Desktop/workspace/DataMaker/cmake-build-debug/CMakeFiles/rebuild_cache.dir

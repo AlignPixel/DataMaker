@@ -7,8 +7,5 @@
 include/*
 DATA_MAKER.hpp
 测试文件：
-cmake-build-debug/*
 main.cpp
-CMakeLists.txt
 ```
-
