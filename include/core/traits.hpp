@@ -1,4 +1,5 @@
 //copy from [std::void_t - cppreference.com](https://en.cppreference.com/w/cpp/types/void_t)#ifndef TRAITS_HPP
+#ifndef TRAITS_HPP
 #define TRAITS_HPP
 #pragma once
 #include <type_traits>

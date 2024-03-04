@@ -6,7 +6,7 @@
 #define IO_HPP
 #include "CORE.hpp"
 
-namespace DATA_MAKER
+namespace DATA_MAKER{
 class IO {
 
 

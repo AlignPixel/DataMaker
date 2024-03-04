@@ -17,7 +17,7 @@ class Random {
 public:
     Random(){}
     Random(int l,int r){ dis = std::uniform_int_distribution<long long> (l,r); }
-    double random(){
+    double doub(){
         return unif(engine); // [0.0, 1.0]
     }
 
