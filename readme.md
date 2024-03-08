@@ -2,10 +2,4 @@
 
 一个用于OI/ICPC/ACM的数据生成器，正在更新中。
 
-```
-库文件：
-include/*
-DATA_MAKER.hpp
-测试文件：
-main.cpp
-```
+部分来源于[cyaron](https://github.com/luogu-dev/cyaron),[cyaroncpp](https://github.com/RainboyNoip/cyaroncpp)
