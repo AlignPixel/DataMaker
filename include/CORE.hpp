@@ -1,8 +1,3 @@
-//
-// Created by rayminn on 24-3-3.
-//
-
-#pragma once
 #ifndef CORE_HPP
 #define CORE_HPP
 

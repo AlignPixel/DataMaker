@@ -9,4 +9,4 @@
 #include "include/io.hpp"
 #include "include/random.hpp"
 
-#endif //DATA_MAKER_HPP
+#endif // DATA_MAKER_HPP

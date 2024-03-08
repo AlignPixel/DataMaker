@@ -2,28 +2,34 @@
 //[process - How do I execute a command and get the output of the command within C++ using POSIX? - Stack Overflow](https://stackoverflow.com/questions/478898/how-do-i-execute-a-command-and-get-the-output-of-the-command-within-c-using-po)
 #ifndef EXEC_HPP
 #define EXEC_HPP
-#pragma once
 #include <iostream>
 #include <stdexcept>
 #include <cstdio>
 #include <string>
 
-namespace DATA_MAKER {
-    void exec(const char* cmd,std::ostream& __out) {
+namespace DATA_MAKER
+{
+    void exec(const char *cmd, std::ostream &__out)
+    {
         char buffer[128];
-        FILE* pipe = popen(cmd, "r");
-        if (!pipe) throw std::runtime_error(std::string("popen() failed!") + __FILE__ + " line: " +  std::to_string(__LINE__).c_str());
-        try {
-            while (fgets(buffer, sizeof buffer, pipe) != NULL) {
+        FILE *pipe = popen(cmd, "r");
+        if (!pipe)
+            throw std::runtime_error(std::string("popen() failed!") + __FILE__ + " line: " + std::to_string(__LINE__).c_str());
+        try
+        {
+            while (fgets(buffer, sizeof buffer, pipe) != NULL)
+            {
                 __out << buffer;
             }
-        } catch (...) {
+        }
+        catch (...)
+        {
             pclose(pipe);
             throw;
         }
         pclose(pipe);
-        //return result;
+        // return result;
     }
 
-} //namespace DATA_MAKER
-#endif //EXEC_HPP
+} // namespace DATA_MAKER
+#endif // EXEC_HPP
